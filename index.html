@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript DOM Event</h1>
+    <div class="gridLayout" id="gridLayout">
+         <div class="colum1" id="colum1-box">
+           <a href="#" id="Button1">alert box</a><br>
+           <a href="#" id="Button2" >Add Remove</a><br>  
+           <a href="#" id="Button3">Hide Message</a><br>
+           <a href="#" id="Button4">Mouse Over</a><br>
+           <a href="#" id="Button5">Button 1</a><br>
+           <a href="#" id="Button6">Button 1</a><br>
+           <a href="#" id="Button7">Button 1</a><br>
+           <a href="#" id="Button8">Button 1</a><br>
+           <a href="#" id="Button9">Button 1</a><br>
+           <a href="#" id="Button10">Button 1</a><br>
+           <a href="" id="Button11">Button 1</a><br>
+          
+
+         </div>
+          <div class="colum2" id="colum2-box">
+           
+           <button  id="Button" type="button" onclick="ClickMe()">Click Me</button>
+            <div class="AddRemove" id="AddRemove">
+              <h5 id="text">This is Css (style add and remove)</h5>
+              <button id="addid">add Style</button>
+              <button id="remId" onclick="removeStyle()">Remove Style</button>
+            </div>
+            <div class="hideMessage" id="hideMessage">
+              <button id="hide-message">Show Message</button>
+              <p id="showTex">hey i am showing</p>
+            </div>
+            <div class="mouseOver" id="m_Over" >
+              <!-- <button id="m_Over">Mouse Over</button> -->
+              <h1 id="MOver" onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse Over..</h1>
+            </div>
+           
+          </div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

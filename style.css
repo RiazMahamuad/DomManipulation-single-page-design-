@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 10px;
+    background: linear-gradient(90deg, rgb(18, 68, 69) 0%, rgb(104, 82, 32) 100%);
+}
+h1{
+    text-align: center;
+    color: rgb(5, 218, 242);
+}
+.gridLayout{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100%;
+    
+    grid-template-areas: 
+    "c d d d d d d d d d d d "
+    "c d d d d d d d d d d d "
+    ;
+}
+
+.colum1{
+    grid-area:c ;
+    opacity: 0.7;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10PX;
+    border-top-left-radius: 5px;    
+    
+}
+.colum2{
+    grid-area: d;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-top-right-radius: 5px;
+}
+.colum1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 22px;
+    border-radius: 5px;
+    border:  0.5px solid rgb(7, 57, 255);
+    
+    
+     
+}
+
+.colum1 a:hover{
+    background-color: rgb(62, 58, 58);
+    border-radius: 5px;
+    color: rgb(0, 255, 242);
+    border:  0.5px solid rgb(12, 228, 252);
+    
+}
+ button{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition :500ms;
+    transform: translateY(0); 
+    cursor: pointer;
+    
+}
+button:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #0066cc;
+}
+    
+.AddRemove{
+
+display: none;
+
+}
+h5{
+    color: rgb(251, 3, 3);
+    display: none;
+ 
+    
+}
+.AddRemove button{
+    margin-top: 10px;
+    display: flex;
+    display: inline-block;
+    padding: 2px 4px;
+}
+.style{
+    font-size: 50px;
+    color: aqua;
+}
+.hideMessage{
+   display: none;
+}
+.hideMessage button{
+    margin-top: 10px;
+    display: flex;
+    display: inline-block;
+    padding: 2px 4px;
+}
+p{
+    color: red;
+    display: none;
+    font-size: 19px;
+}
+
+.mouseOver{
+    display: none;
+}
+#MOver{
+    background-image: linear-gradient(#B5D43C,#2CAEE2);
+    color: black;
+    
+}
